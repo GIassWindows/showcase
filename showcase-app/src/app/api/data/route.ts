@@ -5,6 +5,7 @@ export async function GET() {
         const data = await response.text();
         return new Response(data, { status: 200 });
     } catch (error) {
+        console.log(error);
         return new Response(JSON.stringify({ error: "Failed to fetch data" }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }

@@ -19,21 +19,23 @@ function Home() {
     const [data, setData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Home.useEffect": ()=>{
-            fetch('http://localhost:8080/api').then({
+            fetch('/api/data').then({
                 "Home.useEffect": (res)=>res.text()
             }["Home.useEffect"]).then({
                 "Home.useEffect": (data)=>setData(data)
+            }["Home.useEffect"]).catch({
+                "Home.useEffect": ()=>setData("Error loading data")
             }["Home.useEffect"]);
         }
     }["Home.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                children: "Spring Boot testing"
+                children: "Spring Boot Testing"
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 15,
-                columnNumber: 9
+                lineNumber: 16,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: [
@@ -42,14 +44,14 @@ function Home() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 16,
-                columnNumber: 9
+                lineNumber: 17,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/page.tsx",
-        lineNumber: 14,
-        columnNumber: 7
+        lineNumber: 15,
+        columnNumber: 9
     }, this);
 }
 _s(Home, "VZqd8eS65aqgHhr94QvD8B0VC/4=");

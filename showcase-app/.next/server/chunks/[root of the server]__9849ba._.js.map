@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 47, "column": 0}, "map": {"version":3,"sources":["file://E%3A/Projects/showcase/showcase-app/src/app/api/route.ts"],"sourcesContent":["export async function GET() {\r\n    try {\r\n        const response = await fetch(`${process.env.API_URL}/api`);\r\n        const data = await response.text();\r\n        return new Response(data, { status: 200 });\r\n    } catch (error) {\r\n        return new Response(JSON.stringify({ error: \"Failed to fetch data\" }), {\r\n            status: 500,\r\n            headers: { 'Content-Type': 'application/json' }\r\n        });\r\n    }\r\n}"],"names":[],"mappings":";;;AAAO,eAAe;IAClB,IAAI;QACA,MAAM,WAAW,MAAM,MAAM,GAAG,QAAQ,GAAG,CAAC,OAAO,CAAC,IAAI,CAAC;QACzD,MAAM,OAAO,MAAM,SAAS,IAAI;QAChC,OAAO,IAAI,SAAS,MAAM;YAAE,QAAQ;QAAI;IAC5C,EAAE,OAAO,OAAO;QACZ,OAAO,IAAI,SAAS,KAAK,SAAS,CAAC;YAAE,OAAO;QAAuB,IAAI;YACnE,QAAQ;YACR,SAAS;gBAAE,gBAAgB;YAAmB;QAClD;IACJ;AACJ"}},
+    {"offset": {"line": 68, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
